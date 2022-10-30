@@ -1,0 +1,113 @@
+div{
+	background-color: burlywood;
+}
+
+.loader {	
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid rgb(33, 33, 72); 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  text-size-adjust: 200;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  background-color: blue;
+  border-color: #000409;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: right;
+  border: 1px solid black;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #f3f3f3;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.container {	
+  padding: 20px 20px 20px 20px;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.card_item {
+  padding: 30px 50px;
+  width: 30%;
+  text-align: center;
+}
+
+.container .card_item:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.container .card_inner {
+  background: pink;
+  border-radius: 10px;
+  padding: 35px 20px;
+  min-width: 225px;
+  min-height: 315px;
+  max-height: 200px;
+  width: 70%;
+  box-shadow: 5px 5px 10px 2px rgba(17, 5, 5, 0.996);
+}
+
+.container .card_item img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.container .card_item .username {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container .card_item .email {
+  font-size: 18px;
+  font-weight: 100;
+  margin: 5px 0 10px;
+  word-wrap: break-word;
+  color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
